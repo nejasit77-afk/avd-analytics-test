@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аудит Яндекс Метрики и GA4 за 9 900 ₽ — Наталья Авдеева</title>
+  <meta name="description" content="Проверю Яндекс Метрику, цели, звонки и CRM. Экспресс-аудит за 9 900 ₽ с отчётом и приоритетами за неделю. Работаю с малым бизнесом по всей России.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="author" content="Наталья Авдеева">
+  <link rel="canonical" href="https://test.avd-analytics.ru/">
+  <link rel="sitemap" type="application/xml" href="sitemap.xml">
+  <meta property="og:title" content="Аудит Яндекс Метрики и GA4 за 9 900 ₽ — Наталья Авдеева">
+  <meta property="og:description" content="Проверю цели, звонки, рекламу и сверку с CRM. Понятный отчёт с ошибками и планом исправлений за неделю.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="Наталья Авдеева — веб-аналитик">
+  <meta property="og:url" content="https://test.avd-analytics.ru/">
+  <meta property="og:image" content="https://test.avd-analytics.ru/images/avatar-512.png">
+  <meta name="twitter:card" content="summary">
+  <!-- Структурированные данные для поисковиков и ИИ-ассистентов. При смене цен или контактов правьте и здесь -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://test.avd-analytics.ru/#website",
+        "url": "https://test.avd-analytics.ru/",
+        "name": "Наталья Авдеева — веб-аналитик",
+        "inLanguage": "ru"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://test.avd-analytics.ru/#person",
+        "name": "Наталья Авдеева",
+        "jobTitle": "Веб-аналитик",
+        "description": "Сертифицированный специалист по Яндекс Метрике, Метрике Про, AppMetrica и GA4. 15 лет в маркетинге и аналитике.",
+        "image": "https://test.avd-analytics.ru/images/photo.jpg",
+        "url": "https://test.avd-analytics.ru/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Самара", "addressCountry": "RU" },
+        "sameAs": ["https://t.me/nejasit77"],
+        "knowsAbout": ["Яндекс Метрика", "Google Analytics 4", "AppMetrica", "Google Tag Manager", "Яндекс Тег Менеджер", "Яндекс Директ", "коллтрекинг", "сквозная аналитика", "веб-аналитика"],
+        "hasCredential": [
+          { "@type": "EducationalOccupationalCredential", "name": "Сертификат Яндекса: Яндекс Метрика", "url": "https://b2b.yandex.ru/adv/expert/certificates?certId=299248&lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" },
+          { "@type": "EducationalOccupationalCredential", "name": "Сертификат Яндекса: Метрика Про", "url": "https://b2b.yandex.ru/adv/expert/certificates?certId=316061&lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" },
+          { "@type": "EducationalOccupationalCredential", "name": "Сертификат Яндекса: AppMetrica", "url": "https://b2b.yandex.ru/adv/expert/certificates?certId=316079&lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" },
+          { "@type": "EducationalOccupationalCredential", "name": "Google Analytics Certification (GA4)", "url": "https://skillshop.credential.net/a94b5e6e-2b35-4356-89f3-f37d66139ad4" }
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://test.avd-analytics.ru/#service",
+        "name": "Наталья Авдеева — аудит и настройка веб-аналитики",
+        "description": "Аудит и настройка Яндекс Метрики и GA4 для малого бизнеса: цели, события, сверка с CRM, ТЗ для разработчика, разбор звонков и переписок менеджеров.",
+        "url": "https://test.avd-analytics.ru/",
+        "image": "https://test.avd-analytics.ru/images/avatar-512.png",
+        "telephone": "+7 917 955-79-35",
+        "email": "nejasit@ya.ru",
+        "address": { "@type": "PostalAddress", "addressLocality": "Самара", "addressCountry": "RU" },
+        "areaServed": { "@type": "Country", "name": "Россия" },
+        "priceRange": "2 500–35 000 ₽",
+        "founder": { "@id": "https://test.avd-analytics.ru/#person" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Услуги веб-аналитика",
+          "itemListElement": [
+            { "@type": "Offer", "name": "Консультация по веб-аналитике 1:1", "price": "3500", "priceCurrency": "RUB", "description": "Час разбора вашей аналитики: где теряются деньги и что делать в ближайший месяц." },
+            { "@type": "Offer", "name": "Экспресс-аудит Яндекс Метрики / GA4", "price": "9900", "priceCurrency": "RUB", "description": "Проверка счётчика, целей, звонков и чистоты данных. Отчёт с приоритетами в течение недели." },
+            { "@type": "Offer", "name": "Аудит + ТЗ для разработчика", "price": "24900", "priceCurrency": "RUB", "description": "Экспресс-аудит, проверка Яндекс Директа, сверка с CRM, ТЗ для разработчика и созвон 30 минут. Срок — неделя." },
+            { "@type": "Offer", "name": "Настройка Яндекс Метрики и GA4 с нуля", "price": "20000", "priceCurrency": "RUB", "description": "Установка счётчиков, настройка целей и событий, первый отчёт и обучение. Интернет-магазин с электронной коммерцией — от 35 000 ₽." },
+            { "@type": "Offer", "name": "Мониторинг аналитики", "price": "2500", "priceCurrency": "RUB", "description": "Оперативное уведомление о сбое целей или счётчика и короткая сводка раз в месяц." },
+            { "@type": "Offer", "name": "Сопровождение аналитики", "price": "25000", "priceCurrency": "RUB", "description": "Консультации, отчёты и срочные вопросы. Ежемесячно." },
+            { "@type": "Offer", "name": "UX-разбор по Вебвизору и картам кликов", "price": "9900", "priceCurrency": "RUB", "description": "UX-разбор по Вебвизору и картам кликов от 9 900 ₽; вместе с аудитом — 17 900 ₽." },
+            { "@type": "Offer", "name": "Разбор звонков и переписок менеджеров", "price": "14900", "priceCurrency": "RUB", "description": "Разбор 30–50 звонков и переписок: почему заявки не превращаются в продажи и 5–7 правок для скрипта. 3–5 рабочих дней." }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="icon" href="images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=6">
+</head>
+<body>
+
+<!-- Иконки: используются через <use href="#i-..."> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-card" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+</svg>
+
+<header class="header">
+  <div class="container header__inner">
+    <a href="#top" class="header__logo" aria-label="На главную">
+      <img src="images/logo.svg" alt="Наталья Авдеева — веб-аналитик" width="40" height="40">
+      <span>Наталья Авдеева<small>веб-аналитик</small></span>
+    </a>
+    <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="header__nav" id="nav">
+      <a href="#pains">Ситуации</a>
+      <a href="#audit-check">Что проверю</a>
+      <a href="#prices">Цены</a>
+      <a href="#cases">Проекты</a>
+      <a href="#about">Обо мне</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contacts" class="header__cta" data-goal="click_order" data-service="header_contact" data-open-contact>Связаться</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Первый экран -->
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <p class="pill"><span class="pill__dot"></span>Веб-аналитика для малого бизнеса</p>
+        <h1>Найду, где теряются ваши <mark>заявки</mark> и рекламный бюджет</h1>
+        <p class="hero__lead">Проверю Яндекс Метрику, цели, звонки и связку с CRM. Объясню без терминов, что сломано, и дам ТЗ, которое разработчик выполнит без уточнений.</p>
+        <div class="hero__actions">
+        <button type="button" class="btn btn--primary btn--lg" data-goal="click_order" data-service="hero_audit" data-open-contact>Экспресс-аудит за 9 900 ₽</button>
+        <button type="button" class="btn btn--ghost btn--lg" data-goal="click_order" data-service="hero_free_call" data-open-contact><svg class="ico"><use href="#i-chat"/></svg>Бесплатно 15 минут: подберём формат</button>
+        </div>
+        <p class="hero__fine">Пароли не нужны — только доступ на просмотр. Работаю как самозанятая: чек или договор для ИП и ООО.</p>
+        <ul class="hero__facts">
+        <li><b>15 лет</b><span>в маркетинге и аналитике</span></li>
+        <li><b>1 неделя</b><span>на экспресс-аудит</span></li>
+          <li><b>4</b><span>сертификата: Яндекс и Google</span></li>
+        </ul>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__blob"></div>
+        <img class="hero__photo" src="images/photo.jpg" alt="Веб-аналитик Наталья Авдеева" width="540" height="774">
+        <div class="float float--a">
+          <span class="float__icon float__icon--warn"><svg class="ico"><use href="#i-alert"/></svg></span>
+          <span><b>Цель «Заявка»</b>не срабатывает</span>
+        </div>
+        <div class="float float--b">
+          <span class="float__icon"><svg class="ico"><use href="#i-check"/></svg></span>
+          <span><b>Ошибка найдена</b>ТЗ для разработчика готово</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Сезонный блок скрывается автоматически с января 2027 года -->
+  <section class="seasonal" id="seasonal">
+    <div class="container seasonal__inner">
+      <p>Итоги года и план на 2027 — от 19 900 ₽</p>
+      <a href="#prices">Обсудить отчёт <svg class="ico"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+
+  <!-- Боли -->
+  <section class="section" id="pains">
+    <div class="container">
+      <p class="kicker reveal">Узнаёте себя?</p>
+      <h2 class="section__title reveal">Вам нужен аудит аналитики, если…</h2>
+      <p class="section__lead reveal">Хотя бы один пункт про вас — значит, решения о рекламе сейчас принимаются по неточным цифрам.</p>
+      <div class="pains">
+        <div class="pain reveal"><span class="icon-badge icon-badge--soft"><svg class="ico"><use href="#i-alert"/></svg></span><h3>Цифры не сходятся</h3><p>В CRM одно количество заявок, в Метрике другое — и непонятно, каким цифрам верить.</p></div>
+        <div class="pain reveal"><span class="icon-badge icon-badge--soft"><svg class="ico"><use href="#i-chart"/></svg></span><h3>Реклама «убыточная», а клиенты идут</h3><p>По Директу кампания выглядит убыточной, а менеджеры говорят, что оттуда приходят клиенты.</p></div>
+        <div class="pain reveal"><span class="icon-badge icon-badge--soft"><svg class="ico"><use href="#i-card"/></svg></span><h3>Не знаете, сколько стоит клиент</h3><p>Тратите деньги на рекламу, но не понимаете, какой канал окупается, а какой только расходует бюджет.</p></div>
+        <div class="pain reveal"><span class="icon-badge icon-badge--soft"><svg class="ico"><use href="#i-target"/></svg></span><h3>Никто не знает, что считают цели</h3><p>Цели настраивали разные подрядчики. А автостратегии Директа обучаются именно на них — если цели считают неправильно, реклама работает хуже.</p></div>
+        <div class="pain reveal"><span class="icon-badge icon-badge--soft"><svg class="ico"><use href="#i-help"/></svg></span><h3>Отчёты есть, решений нет</h3><p>Подрядчики присылают отчёты, но из них непонятно, что делать дальше.</p></div>
+        <a class="pain pain--cta reveal" href="#contacts" data-goal="click_order" data-service="pains_cta" data-open-contact>
+          <h3>Узнали свою ситуацию?</h3>
+          <p>Проверю, где именно теряются данные и заявки.</p>
+          <span class="pain__link">Проверить мою Метрику <svg class="ico"><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+      <div class="checklist-line reveal">
+        <p><b>Бесплатно:</b> чек-лист «Проверка Яндекс Метрики за 30 минут»</p>
+        <span>
+          <a href="https://t.me/nejasit77" target="_blank" rel="noopener" data-goal="click_telegram" data-service="checklist">Получить в Telegram</a>
+          <a href="mailto:nejasit@ya.ru?subject=%D0%A7%D0%B5%D0%BA-%D0%BB%D0%B8%D1%81%D1%82%20%D0%BF%D0%BE%20%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%20%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D0%BA%D0%B5" data-goal="click_email" data-service="checklist">Запросить по почте</a>
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Что проверяю -->
+  <section class="section section--cream" id="audit-check">
+    <div class="container">
+      <p class="kicker reveal">Экспресс-аудит</p>
+      <h2 class="section__title reveal">Что я проверяю в аудите</h2>
+      <div class="audit-grid">
+        <article class="audit-item reveal"><span class="audit-item__num">01</span><h3>Счётчик</h3><p>Стоит ли на всех страницах, нет ли дублей и конфликтов с другими кодами.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">02</span><h3>Цели</h3><p>Срабатывают ли формы, квизы, кнопки мессенджеров и телефона. Нет ли двойного счёта.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">03</span><h3>Звонки</h3><p>Попадают ли звонки из коллтрекинга в Метрику и с каким источником.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">04</span><h3>Реклама</h3><p>UTM-метки, передача целей в Директ и цели, на которых обучаются автостратегии.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">05</span><h3>Сверка с CRM</h3><p>Сколько заявок в CRM и Метрике и где расходятся цифры.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">06</span><h3>Чистота данных</h3><p>Роботы, внутренний трафик и фильтры, влияющие на отчёты.</p></article>
+      </div>
+      <p class="audit-note reveal">Автостратегии Директа обучаются на целях Метрики. Если цели считают неправильно, бюджет уходит на не тех людей.</p>
+    </div>
+  </section>
+
+  <!-- Как выглядит результат -->
+  <section class="section" id="report">
+    <div class="container">
+      <p class="kicker reveal">Результат работы</p>
+      <h2 class="section__title reveal">Так выглядит отчёт</h2>
+      <p class="section__lead reveal">Каждую найденную проблему объясняю простым языком и связываю с конкретным следующим шагом.</p>
+      <div class="report-preview reveal">
+        <div class="report-preview__sheet">
+          <div class="report-preview__top"><span>АУДИТ АНАЛИТИКИ</span><span>ПРИМЕР ФОРМАТА</span></div>
+          <h3>Приоритеты проверки</h3>
+          <div class="report-row report-row--critical"><b>Критично</b><span>Цель может срабатывать до успешной отправки формы</span></div>
+          <div class="report-row report-row--important"><b>Важно</b><span>Звонки не передаются в отчёт по источникам</span></div>
+          <div class="report-row report-row--improve"><b>Улучшение</b><span>Проверить UTM-разметку платных кампаний</span></div>
+          <p>Демонстрационный фрагмент: это не данные клиента.</p>
+        </div>
+        <div class="report-preview__details">
+          <article><b>Критично / важно / улучшение</b><p>Каждая ошибка отмечена по важности.</p></article>
+          <article><b>Чем грозит</b><p>Простыми словами объясняю, что теряет бизнес.</p></article>
+          <article><b>Как исправить</b><p>Пошаговое ТЗ для разработчика или инструкция для вас.</p></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Цены -->
+  <section class="section section--cream" id="prices">
+    <div class="container">
+      <p class="kicker reveal">Стоимость</p>
+      <h2 class="section__title reveal">Цены</h2>
+      <div class="prices">
+        <article class="price reveal">
+          <p class="price__name">Экспресс-аудит</p>
+          <p class="price__value">9 900 ₽</p>
+          <p>Проверю, можно ли доверять цифрам в Метрике. В течение недели пришлю отчёт: что сломано, чем это грозит и что исправить в первую очередь.</p>
+          <p class="price__label">Проверю</p>
+          <ul class="checks"><li>Счётчик и цели</li><li>Звонки и чистоту данных</li><li>Ошибки и потери данных</li><li>Отчёт с приоритетами</li></ul>
+          <p class="price__note price__note--light">Доступ к Метрике — только на просмотр. Пароль сообщать не нужно.</p>
+          <button type="button" class="btn btn--outline" data-goal="click_order" data-service="audit" data-open-contact>Заказать экспресс-аудит</button>
+        </article>
+        <article class="price price--hit reveal">
+          <p class="price__badge">Чаще всего выбирают</p>
+          <p class="price__name">Аудит + ТЗ</p>
+          <p class="price__value">24 900 ₽</p>
+          <p>Найду, почему число заявок в CRM и Метрике расходится и какая реклама приводит клиентов. Разберём отчёт на созвоне.</p>
+          <p class="price__label">Всё из экспресс-аудита, плюс</p>
+          <ul class="checks"><li>Проверка Яндекс Директа и целей для автостратегий</li><li>Сверка с CRM по выгрузке без имён и телефонов</li><li>Готовое ТЗ для разработчика</li><li>Созвон 30 минут</li></ul>
+          <p class="price__note"><svg class="ico"><use href="#i-clock"/></svg><span>Срок — неделя после получения доступов. Метрика — просмотр, Директ — чтение.</span></p>
+          <button type="button" class="btn btn--primary" data-goal="click_order" data-service="audit_tz" data-open-contact>Заказать аудит с ТЗ</button>
+        </article>
+        <article class="price reveal">
+          <p class="price__name">Настройка под ключ</p>
+          <p class="price__value">от 20 000 ₽</p>
+          <p>Настрою Метрику с нуля, цели, подключение коллтрекинга и CRM, подготовлю первый отчёт и покажу, как его читать. Точную цену назову после 15-минутного созвона.</p>
+          <p class="price__label">Доступы</p><p>Метрика и тег-менеджер — с правом редактирования на время настройки.</p>
+          <p class="price__label">Срок</p><p>Определим после созвона.</p>
+          <button type="button" class="btn btn--outline" data-goal="click_order" data-service="setup" data-open-contact>Обсудить настройку</button>
+        </article>
+        <article class="price reveal">
+          <p class="price__name">Мониторинг</p>
+          <p class="price__value">2 500 ₽ <span>в месяц</span></p>
+          <p>Если цель перестанет срабатывать или пропадёт счётчик, сообщу в тот же день в удобный мессенджер или на почту. Короткая сводка — раз в месяц.</p>
+          <p class="price__label">Доступ</p><p>Метрика — только просмотр.</p>
+          <button type="button" class="btn btn--outline" data-goal="click_order" data-service="monitoring" data-open-contact>Подключить мониторинг</button>
+        </article>
+      </div>
+      <div class="additional reveal">
+        <h3>Дополнительные услуги</h3>
+        <div class="additional__table-wrap">
+          <table class="additional__table">
+            <thead><tr><th>Услуга</th><th>Цена</th><th>Срок</th><th></th></tr></thead>
+            <tbody>
+              <tr><td>Консультация 1:1</td><td>3 500 ₽/час</td><td>По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="consultation" data-open-contact>Обсудить</button></td></tr>
+              <tr><td>UX-разбор по Вебвизору и картам кликов</td><td>От 9 900 ₽; с аудитом — 17 900 ₽</td><td>2–3 рабочих дня</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ux_review" data-open-contact>Обсудить</button></td></tr>
+              <tr><td>CJM: путь клиента от рекламы до оплаты</td><td>По объёму задачи</td><td>По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="cjm" data-open-contact>Обсудить</button></td></tr>
+              <tr><td>Разбор звонков и переписок</td><td>14 900 ₽</td><td>3–5 рабочих дней</td><td><button type="button" class="text-button" data-goal="click_order" data-service="calls_review" data-open-contact>Обсудить</button></td></tr>
+              <tr><td>Электронная коммерция для интернет-магазина</td><td>От 35 000 ₽</td><td>После созвона</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ecommerce" data-open-contact>Обсудить</button></td></tr>
+              <tr><td>Сопровождение: консультации, отчёты, срочные вопросы</td><td>От 25 000 ₽/мес</td><td>Ежемесячно</td><td><button type="button" class="text-button" data-goal="click_order" data-service="support" data-open-contact>Обсудить</button></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <p class="prices__terms reveal">Работаю как самозанятая: без НДС, чек из «Моего налога». Для ИП и ООО — договор и акт. <button type="button" class="text-button" data-goal="click_order" data-service="agency_audit" data-open-contact>Работаете со студией или таргетологом? Сделаю аудит под вашим брендом — напишите.</button></p>
+    </div>
+  </section>
+
+  <!-- Как строится работа -->
+  <section class="section" id="process">
+    <div class="container">
+      <p class="kicker reveal">Процесс</p>
+      <h2 class="section__title reveal">Как строится работа</h2>
+      <ol class="steps">
+        <li class="reveal"><span class="steps__num">1</span><h3>Вы оставляете заявку</h3><p>Напишите в Telegram, MAX, по телефону или почте. Коротко опишите, что вас беспокоит: не сходятся цифры, нет заявок, непонятно, работает ли реклама.</p></li>
+        <li class="reveal"><span class="steps__num">2</span><h3>Бесплатный созвон 15 минут</h3><p>Задам уточняющие вопросы и предложу подходящий формат: консультацию, аудит или настройку.</p></li>
+        <li class="reveal"><span class="steps__num">3</span><h3>Фиксируем объём, срок и оплату</h3><p>До начала работ вы знаете, что входит в услугу, какие доступы нужны, сколько она стоит и когда будет результат.</p></li>
+        <li class="reveal"><span class="steps__num">4</span><h3>Получаете результат</h3><p>Для аудита предоставляете доступ к Метрике только на просмотр. Отчёт готов в течение недели после получения доступов; затем разбираем его на созвоне, если он входит в пакет.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Проекты -->
+  <section class="section section--cream" id="cases">
+    <div class="container">
+      <p class="kicker reveal">Опыт и практика</p>
+      <h2 class="section__title reveal">Что я нахожу чаще всего</h2>
+      <p class="section__lead reveal">Эти ошибки не видны снаружи, но искажают цифры, по которым вы распределяете бюджет.</p>
+      <div class="issues-grid">
+        <article class="issue reveal"><span>01</span><div><h3>Цель считает клики, а не заявки</h3><p>Цель срабатывает на нажатие «Отправить», даже если форма не ушла. В Метрике заявок больше, чем в CRM.</p></div></article>
+        <article class="issue reveal"><span>02</span><div><h3>Звонки не попадают в Метрику</h3><p>Коллтрекинг подключён, но звонки не передаются как цель. Директ не видит самые ценные обращения.</p></div></article>
+        <article class="issue reveal"><span>03</span><div><h3>Счётчик установлен дважды</h3><p>Код есть и на сайте, и в тег-менеджере. Визиты и цели могут считаться повторно.</p></div></article>
+        <article class="issue reveal"><span>04</span><div><h3>Квиз и мессенджеры без целей</h3><p>Заявки из квиза и нажатия на кнопки мессенджеров не учитываются. Реклама выглядит хуже, чем работает.</p></div></article>
+        <article class="issue reveal"><span>05</span><div><h3>Автостратегия учится не на той цели</h3><p>Директ ищет людей, которые открывают страницу контактов, а не тех, кто действительно оставляет заявку.</p></div></article>
+        <article class="issue reveal"><span>06</span><div><h3>Реклама без UTM-меток</h3><p>Часть платного трафика попадает в «прямые заходы», и оценить её окупаемость нельзя.</p></div></article>
+      </div>
+      <p class="issues-cta reveal"><button type="button" class="btn btn--primary" data-goal="click_order" data-service="common_errors" data-open-contact>Проверить мою Метрику</button></p>
+      <div class="projects-heading">
+        <p class="kicker reveal">Проекты из опыта</p>
+        <h2 class="section__title reveal">Проекты</h2>
+        <p class="section__lead reveal">Три проекта из разных сфер — без названий компаний и клиентских данных.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="case reveal">
+          <p class="case__sphere">Недвижимость</p>
+          <p class="case__metric">−20%</p>
+          <p class="case__metric-label">затраты на рекламу</p>
+          <h3>Бюджет под контролем, план по лидам выполнен</h3>
+          <dl>
+            <dt>Задача</dt><dd>Реклама шла в нескольких каналах, но было непонятно, откуда приходят клиенты и какая реклама окупается.</dd>
+            <dt>Что сделала</dt><dd>Настроила аналитику, сравнила эффективность каналов, выстроила работу с подрядчиками, подготовила медиаплан и настроила рекламу в Яндекс Директе и VK.</dd>
+            <dt>Результат</dt><dd>Затраты на рекламу снизились на 20%, план по лидам выполнен. Появилась система, показывающая стоимость клиентов по каналам.</dd>
+          </dl>
+        </article>
+        <article class="case reveal">
+          <p class="case__sphere">Телекоммуникации</p>
+          <p class="case__metric">1,5% → 3%</p>
+          <p class="case__metric-label">конверсия сайта</p>
+          <h3>Новый сайт начал работать на заявки</h3>
+          <dl>
+            <dt>Задача</dt><dd>Оператору связи нужен был новый сайт, ориентированный на заявки.</dd>
+            <dt>Что сделала</dt><dd>Подготовила ТЗ, привлекла агентство, вела создание сайта и настроила аналитику.</dd>
+            <dt>Результат</dt><dd>Конверсия выросла с 1,5% до 3%, трафик — в 2 раза.</dd>
+          </dl>
+        </article>
+        <article class="case reveal">
+          <p class="case__sphere">Магазины женского белья</p>
+          <p class="case__metric">Продажи</p>
+          <p class="case__metric-label">сайт стал приводить покупателей</p>
+          <h3>Запуск продаж на сайте</h3>
+          <dl>
+            <dt>Задача</dt><dd>Сайт не приносил продажи: посетители заходили, но не покупали.</dd>
+            <dt>Что сделала</dt><dd>Переделала сайт: SEO, юзабилити и оформление; настроила аналитику и запустила рекламу.</dd>
+            <dt>Результат</dt><dd>Сайт стал приводить покупателей, группа ВКонтакте выросла с 400 до 2 400 подписчиков и вышла в топ Яндекса.</dd>
+          </dl>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Обо мне -->
+  <section class="section section--dark" id="about">
+    <div class="container about">
+      <div class="about__media reveal">
+        <img class="about__photo" src="images/photo.jpg" alt="Наталья Авдеева, веб-аналитик" width="540" height="774" loading="lazy">
+        <div class="about__badge"><svg class="ico"><use href="#i-award"/></svg><span>Сертификаты<br><a href="https://b2b.yandex.ru/adv/expert/certificates?certId=299248&amp;lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" target="_blank" rel="noopener">Яндекс Метрика</a>, <a href="https://b2b.yandex.ru/adv/expert/certificates?certId=316061&amp;lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" target="_blank" rel="noopener">Метрика Про</a>, <a href="https://b2b.yandex.ru/adv/expert/certificates?certId=316079&amp;lastname=%D0%90%D0%B2%D0%B4%D0%B5%D0%B5%D0%B2%D0%B0" target="_blank" rel="noopener">AppMetrica</a> и <a href="https://skillshop.credential.net/a94b5e6e-2b35-4356-89f3-f37d66139ad4#acc.31vSM8tE" target="_blank" rel="noopener">GA4</a></span></div>
+      </div>
+      <div class="about__text reveal">
+        <p class="kicker">Обо мне</p>
+        <h2 class="section__title section__title--left">Наталья Авдеева</h2>
+        <p class="about__role">Веб-аналитик, сертифицированный специалист по Яндекс Метрике, Метрике Про, AppMetrica и GA4</p>
+        <p><b>15 лет в маркетинге и аналитике.</b> Работала ведущим специалистом в одном из крупнейших digital-агентств России. Теперь работаю с малым бизнесом напрямую, без агентских наценок.</p>
+        <p><b>Объясняю без терминов:</b> что сломано в аналитике, сколько это стоит бизнесу и что исправить первым. Результат — не красивая презентация, а решения, по которым можно действовать.</p>
+        <p class="about__label">Работала с проектами в разных сферах</p>
+        <ul class="tags">
+          <li><b>E-commerce</b> бренды электроники, часов, сантехники; магазины одежды</li>
+          <li><b>Недвижимость</b> агентства и застройщики</li>
+          <li><b>B2B-услуги</b> сервисы и решения для бизнеса</li>
+          <li><b>Телеком</b> операторы связи</li>
+          <li><b>Локальный бизнес</b> медицинские клиники, спортивные центры</li>
+        </ul>
+        <p class="about__label">Инструменты</p>
+        <ul class="chips chips--about">
+          <li>Яндекс Метрика</li><li>Google Analytics 4</li>
+          <li>Google Tag Manager</li><li>Яндекс Тег Менеджер</li>
+          <li>Calltouch</li><li>CoMagic (UIS)</li><li>Callibri</li>
+          <li>amoCRM</li><li>Битрикс24</li>
+          <li>Yandex DataLens</li><li>Looker Studio</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Частые вопросы. Тексты продублированы в FAQPage ниже — правьте в обоих местах -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <p class="kicker reveal">Вопросы и ответы</p>
+      <h2 class="section__title reveal">Частые вопросы</h2>
+      <div class="faq reveal">
+        <details>
+          <summary>Сколько стоит аудит Яндекс Метрики?</summary>
+          <p>Экспресс-аудит — 9 900 ₽: проверю счётчик, цели, звонки и чистоту данных, пришлю отчёт с приоритетами в течение недели. Аудит с ТЗ — 24 900 ₽: дополнительно проверю Директ, сверю данные с CRM по обезличенной выгрузке, подготовлю ТЗ и разберу отчёт на созвоне 30 минут.</p>
+        </details>
+        <details>
+          <summary>Сколько времени занимает аудит?</summary>
+          <p>Отчёт будет готов в течение недели после получения необходимых доступов.</p>
+        </details>
+        <details>
+          <summary>Нужно ли сообщать пароль от Метрики?</summary>
+          <p>Нет. Вы добавляете мой логин в настройках счётчика с правом «Только просмотр» — это занимает пару минут, я пришлю инструкцию. Доступ можно отозвать в любой момент.</p>
+        </details>
+        <details>
+          <summary>Почему в Метрике и в CRM разное количество заявок?</summary>
+          <p>Частые причины: цель срабатывает на клик по кнопке, а не на успешную отправку формы; одна заявка засчитывается дважды; звонки и сообщения в мессенджерах не попадают в Метрику без коллтрекинга; часть посетителей блокирует счётчик. На аудите я нахожу, какие из причин есть у вас, и показываю, каким цифрам можно верить.</p>
+        </details>
+        <details>
+          <summary>Что входит в настройку Яндекс Метрики и GA4 с нуля?</summary>
+          <p>Настройка Метрики с нуля, цели, подключение коллтрекинга и CRM, первый отчёт и обучение. Стоимость — от 20 000 ₽, для интернет-магазина с электронной коммерцией — от 35 000 ₽. Точный срок определим после созвона.</p>
+        </details>
+        <details>
+          <summary>Можно ли использовать Google Analytics 4 в России?</summary>
+          <p>Отдельного закона, который запрещает именно Google Analytics, нет. Но по закону о персональных данных (ч. 5 ст. 18 152-ФЗ) данные россиян при сборе должны сначала записываться в базы на территории России, а GA4 отправляет данные посетителей сразу на серверы Google за рубежом. Уведомление Роскомнадзора о трансграничной передаче и согласие посетителя в cookie-баннере эту проблему не снимают. Штраф для компаний за нарушение локализации — до 6 млн ₽, при повторном нарушении — до 18 млн ₽. Поэтому для российских сайтов безопаснее Яндекс Метрика, а GA4 стоит подключать только после консультации с юристом по персональным данным.</p>
+        </details>
+        <details>
+          <summary>Что такое разбор звонков и переписок?</summary>
+          <p>Я разбираю 30–50 звонков и переписок ваших менеджеров и показываю, где и почему теряются клиенты: цена, запись, следующий шаг. Вы получаете частые вопросы клиентов и 5–7 правок для скрипта продаж с готовыми фразами. Стоимость — 14 900 ₽, срок — 3–5 рабочих дней.</p>
+        </details>
+        <details>
+          <summary>Вы работаете только с Самарой?</summary>
+          <p>Нет. Я живу в Самаре и работаю удалённо с клиентами по всей России: всё общение — в Telegram, MAX, по телефону или почте, доступы выдаются онлайн.</p>
+        </details>
+        <details>
+          <summary>Как оплатить? Работаете с юрлицами?</summary>
+          <p>Работаю как самозанятая, чек выдаю через «Мой налог». Для ИП и ООО готовлю договор и акт. НДС нет. Условия оплаты согласуем до начала работы.</p>
+        </details>
+        <details>
+          <summary>У нас уже есть агентство или подрядчик. Зачем нужен независимый аудит?</summary>
+          <p>Независимая проверка помогает убедиться, что данные аналитики точны и по ним можно объективно оценивать работу подрядчика.</p>
+        </details>
+        <details>
+          <summary>Нужно ли передавать данные клиентов из CRM?</summary>
+          <p>Нет. Для сверки достаточно выгрузки без имён и телефонов: дата, источник и статус заявки.</p>
+        </details>
+        <details>
+          <summary>А если ошибок не найдётся?</summary>
+          <p>Вы получите подтверждение, что данным можно доверять, и список того, что можно улучшить.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Сколько стоит аудит Яндекс Метрики?", "acceptedAnswer": { "@type": "Answer", "text": "Экспресс-аудит — 9 900 ₽: проверю счётчик, цели, звонки и чистоту данных, пришлю отчёт с приоритетами в течение недели. Аудит с ТЗ — 24 900 ₽: дополнительно проверю Директ, сверю данные с CRM по обезличенной выгрузке, подготовлю ТЗ и разберу отчёт на созвоне 30 минут." } },
+      { "@type": "Question", "name": "Сколько времени занимает аудит?", "acceptedAnswer": { "@type": "Answer", "text": "Отчёт будет готов в течение недели после получения необходимых доступов." } },
+      { "@type": "Question", "name": "Нужно ли сообщать пароль от Метрики?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Вы добавляете мой логин в настройках счётчика с правом «Только просмотр» — это занимает пару минут, я пришлю инструкцию. Доступ можно отозвать в любой момент." } },
+      { "@type": "Question", "name": "Почему в Метрике и в CRM разное количество заявок?", "acceptedAnswer": { "@type": "Answer", "text": "Частые причины: цель срабатывает на клик по кнопке, а не на успешную отправку формы; одна заявка засчитывается дважды; звонки и сообщения в мессенджерах не попадают в Метрику без коллтрекинга; часть посетителей блокирует счётчик. На аудите я нахожу, какие из причин есть у вас, и показываю, каким цифрам можно верить." } },
+      { "@type": "Question", "name": "Что входит в настройку Яндекс Метрики и GA4 с нуля?", "acceptedAnswer": { "@type": "Answer", "text": "Настройка Метрики с нуля, цели, подключение коллтрекинга и CRM, первый отчёт и обучение. Стоимость — от 20 000 ₽, для интернет-магазина с электронной коммерцией — от 35 000 ₽. Точный срок определим после созвона." } },
+      { "@type": "Question", "name": "Можно ли использовать Google Analytics 4 в России?", "acceptedAnswer": { "@type": "Answer", "text": "Отдельного закона, который запрещает именно Google Analytics, нет. Но по закону о персональных данных (ч. 5 ст. 18 152-ФЗ) данные россиян при сборе должны сначала записываться в базы на территории России, а GA4 отправляет данные посетителей сразу на серверы Google за рубежом. Уведомление Роскомнадзора о трансграничной передаче и согласие посетителя в cookie-баннере эту проблему не снимают. Штраф для компаний за нарушение локализации — до 6 млн ₽, при повторном нарушении — до 18 млн ₽. Поэтому для российских сайтов безопаснее Яндекс Метрика, а GA4 стоит подключать только после консультации с юристом по персональным данным." } },
+      { "@type": "Question", "name": "Что такое разбор звонков и переписок?", "acceptedAnswer": { "@type": "Answer", "text": "Я разбираю 30–50 звонков и переписок ваших менеджеров и показываю, где и почему теряются клиенты: цена, запись, следующий шаг. Вы получаете частые вопросы клиентов и 5–7 правок для скрипта продаж с готовыми фразами. Стоимость — 14 900 ₽, срок — 3–5 рабочих дней." } },
+      { "@type": "Question", "name": "Вы работаете только с Самарой?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Я живу в Самаре и работаю удалённо с клиентами по всей России: всё общение — в Telegram, MAX, по телефону или почте, доступы выдаются онлайн." } },
+      { "@type": "Question", "name": "Как оплатить? Работаете с юрлицами?", "acceptedAnswer": { "@type": "Answer", "text": "Работаю как самозанятая, чек выдаю через «Мой налог». Для ИП и ООО готовлю договор и акт. НДС нет. Условия оплаты согласуем до начала работы." } },
+      { "@type": "Question", "name": "У нас уже есть агентство или подрядчик. Зачем нужен независимый аудит?", "acceptedAnswer": { "@type": "Answer", "text": "Независимая проверка помогает убедиться, что данные аналитики точны и по ним можно объективно оценивать работу подрядчика." } },
+      { "@type": "Question", "name": "Нужно ли передавать данные клиентов из CRM?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Для сверки достаточно выгрузки без имён и телефонов: дата, источник и статус заявки." } },
+      { "@type": "Question", "name": "А если ошибок не найдётся?", "acceptedAnswer": { "@type": "Answer", "text": "Вы получите подтверждение, что данным можно доверять, и список того, что можно улучшить." } }
+    ]
+  }
+  </script>
+
+  <!-- Контакты -->
+  <section class="section contacts" id="contacts">
+    <div class="container contacts__inner">
+      <div class="contacts__text reveal">
+        <h2 class="section__title section__title--left">Напишите, даже если пока не понимаете, чем я могу помочь</h2>
+        <p class="contacts__lead">Разберёмся за 15 минут — бесплатно. Выберите удобный способ связи.</p>
+        <p class="contacts__geo">Самара · работаю удалённо по всей России</p>
+      </div>
+      <div class="contacts__card reveal">
+        <a class="contact contact--tg" href="https://t.me/nejasit77" target="_blank" rel="noopener" data-goal="click_telegram">
+          <span class="contact__icon"><svg class="ico"><use href="#i-send"/></svg></span>
+          <span><b>Telegram</b>@nejasit77</span>
+        </a>
+        <a class="contact contact--max" href="https://max.ru/u/f9LHodD0cOIstSbB-7pquYAZlcAGWximjwvTOyJSx4Q5UJZFZWwgO3F9Ykw" target="_blank" rel="noopener" data-goal="click_max">
+          <span class="contact__icon"><svg class="ico"><use href="#i-chat"/></svg></span>
+          <span><b>MAX</b>Написать в MAX</span>
+        </a>
+        <a class="contact" href="tel:+79179557935" data-goal="click_phone">
+          <span class="contact__icon"><svg class="ico"><use href="#i-phone"/></svg></span>
+          <span><b>Телефон</b>+7 917 955-79-35</span>
+        </a>
+        <a class="contact" href="mailto:nejasit@ya.ru" data-goal="click_email">
+          <span class="contact__icon"><svg class="ico"><use href="#i-mail"/></svg></span>
+          <span><b>Почта</b>nejasit@ya.ru</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div>
+      <span class="footer__brand"><img src="images/logo.svg" alt="" width="28" height="28">© 2026 Наталья Авдеева, веб-аналитик</span>
+      <p class="footer__seller">Авдеева Наталья Алексеевна · плательщик НПД · ИНН 631895195778</p>
+    </div>
+    <nav class="footer__links" aria-label="Документы">
+      <a href="offer.html">Оферта</a>
+      <a href="privacy.html">Политика обработки персональных данных</a>
+    </nav>
+  </div>
+</footer>
+
+<dialog class="contact-dialog" id="contact-dialog" aria-labelledby="contact-dialog-title">
+  <div class="contact-dialog__inner">
+    <button class="contact-dialog__close" type="button" aria-label="Закрыть окно" data-close-contact>&times;</button>
+    <p class="kicker">Связаться</p>
+    <h2 id="contact-dialog-title">Выберите удобный способ</h2>
+    <p>Напишите, какая услуга вас интересует, и адрес сайта.</p>
+    <div class="contact-dialog__choices">
+      <a class="contact contact--tg" href="https://t.me/nejasit77" target="_blank" rel="noopener" data-goal="click_telegram"><span class="contact__icon"><svg class="ico"><use href="#i-send"/></svg></span><span><b>Telegram</b>@nejasit77</span></a>
+      <a class="contact contact--max" href="https://max.ru/u/f9LHodD0cOIstSbB-7pquYAZlcAGWximjwvTOyJSx4Q5UJZFZWwgO3F9Ykw" target="_blank" rel="noopener" data-goal="click_max"><span class="contact__icon"><svg class="ico"><use href="#i-chat"/></svg></span><span><b>MAX</b>Написать в MAX</span></a>
+      <a class="contact" href="tel:+79179557935" data-goal="click_phone"><span class="contact__icon"><svg class="ico"><use href="#i-phone"/></svg></span><span><b>Телефон</b>+7 917 955-79-35</span></a>
+      <a class="contact" href="mailto:nejasit@ya.ru" data-goal="click_email"><span class="contact__icon"><svg class="ico"><use href="#i-mail"/></svg></span><span><b>Почта</b>nejasit@ya.ru</span></a>
+    </div>
+  </div>
+</dialog>
+
+<div class="cookie" id="cookie" hidden>
+  <p>Сайт использует cookies и Яндекс Метрику, чтобы понимать, как посетители пользуются сайтом. Продолжая пользоваться сайтом, вы соглашаетесь с этим. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+  <div class="cookie__actions">
+    <button class="btn btn--primary btn--sm" data-cookie="accept">Понятно</button>
+    <button class="btn btn--ghost-dark btn--sm" data-cookie="decline">Отказаться</button>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
