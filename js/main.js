@@ -107,15 +107,28 @@ document.addEventListener('click', function (event) {
   burger.addEventListener('click', function () {
     var open = nav.classList.toggle('is-open');
     burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
   });
 
   nav.addEventListener('click', function (event) {
     if (event.target.tagName === 'A') {
       nav.classList.remove('is-open');
       burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Открыть меню');
     }
   });
 })();
+
+// Однократная цель при первом открытии каждого вопроса FAQ
+document.querySelectorAll('#faq details').forEach(function (item) {
+  var sent = false;
+  item.addEventListener('toggle', function () {
+    if (item.open && !sent) {
+      sent = true;
+      reachGoal('faq_open', { question: item.querySelector('summary').textContent.trim() });
+    }
+  });
+});
 
 // Единое окно выбора канала связи для CTA
 (function () {

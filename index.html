@@ -58,7 +58,7 @@
         "email": "nejasit@ya.ru",
         "address": { "@type": "PostalAddress", "addressLocality": "Самара", "addressCountry": "RU" },
         "areaServed": { "@type": "Country", "name": "Россия" },
-        "priceRange": "2 500–35 000 ₽",
+        "priceRange": "3 500–35 000 ₽",
         "founder": { "@id": "https://test.avd-analytics.ru/#person" },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
@@ -68,7 +68,6 @@
             { "@type": "Offer", "name": "Экспресс-аудит Яндекс Метрики / GA4", "price": "9900", "priceCurrency": "RUB", "description": "Проверка счётчика, целей, звонков и чистоты данных. Отчёт с приоритетами в течение недели." },
             { "@type": "Offer", "name": "Аудит + ТЗ для разработчика", "price": "24900", "priceCurrency": "RUB", "description": "Экспресс-аудит, проверка Яндекс Директа, сверка с CRM, ТЗ для разработчика и созвон 30 минут. Срок — неделя." },
             { "@type": "Offer", "name": "Настройка Яндекс Метрики и GA4 с нуля", "price": "20000", "priceCurrency": "RUB", "description": "Установка счётчиков, настройка целей и событий, первый отчёт и обучение. Интернет-магазин с электронной коммерцией — от 35 000 ₽." },
-            { "@type": "Offer", "name": "Мониторинг аналитики", "price": "2500", "priceCurrency": "RUB", "description": "Оперативное уведомление о сбое целей или счётчика и короткая сводка раз в месяц." },
             { "@type": "Offer", "name": "Сопровождение аналитики", "price": "25000", "priceCurrency": "RUB", "description": "Консультации, отчёты и срочные вопросы. Ежемесячно." },
             { "@type": "Offer", "name": "UX-разбор по Вебвизору и картам кликов", "price": "9900", "priceCurrency": "RUB", "description": "UX-разбор по Вебвизору и картам кликов от 9 900 ₽; вместе с аудитом — 17 900 ₽." },
             { "@type": "Offer", "name": "Разбор звонков и переписок менеджеров", "price": "14900", "priceCurrency": "RUB", "description": "Разбор 30–50 звонков и переписок: почему заявки не превращаются в продажи и 5–7 правок для скрипта. 3–5 рабочих дней." }
@@ -84,7 +83,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=6">
+  <link rel="stylesheet" href="css/style.css?v=7">
 </head>
 <body>
 
@@ -110,6 +109,7 @@
   <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
   <symbol id="i-arrow" viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
 </svg>
 
 <header class="header">
@@ -121,11 +121,12 @@
     <button class="header__burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
+    <button type="button" class="btn btn--primary header__cta-mobile" data-open-contact data-goal="click_order" data-service="header_mobile">Связаться</button>
     <nav class="header__nav" id="nav">
-      <a href="#pains">Ситуации</a>
+      <a href="#pains">Кому нужен аудит</a>
       <a href="#audit-check">Что проверю</a>
       <a href="#prices">Цены</a>
-      <a href="#cases">Проекты</a>
+      <a href="#projects">Проекты</a>
       <a href="#about">Обо мне</a>
       <a href="#faq">Вопросы</a>
       <a href="#contacts" class="header__cta" data-goal="click_order" data-service="header_contact" data-open-contact>Связаться</a>
@@ -146,7 +147,7 @@
         <button type="button" class="btn btn--primary btn--lg" data-goal="click_order" data-service="hero_audit" data-open-contact>Экспресс-аудит за 9 900 ₽</button>
         <button type="button" class="btn btn--ghost btn--lg" data-goal="click_order" data-service="hero_free_call" data-open-contact><svg class="ico"><use href="#i-chat"/></svg>Бесплатно 15 минут: подберём формат</button>
         </div>
-        <p class="hero__fine">Пароли не нужны — только доступ на просмотр. Работаю как самозанятая: чек или договор для ИП и ООО.</p>
+        <p class="hero__fine">Работаю как самозанятая: чек или договор для ИП и ООО.</p>
         <ul class="hero__facts">
         <li><b>15 лет</b><span>в маркетинге и аналитике</span></li>
         <li><b>1 неделя</b><span>на экспресс-аудит</span></li>
@@ -172,7 +173,7 @@
   <section class="seasonal" id="seasonal">
     <div class="container seasonal__inner">
       <p>Итоги года и план на 2027 — от 19 900 ₽</p>
-      <a href="#prices">Обсудить отчёт <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <button type="button" class="seasonal__link" data-open-contact data-goal="click_order" data-service="seasonal">Обсудить отчёт <svg class="ico"><use href="#i-arrow-right"/></svg></button>
     </div>
   </section>
 
@@ -211,7 +212,7 @@
       <h2 class="section__title reveal">Что я проверяю в аудите</h2>
       <div class="audit-grid">
         <article class="audit-item reveal"><span class="audit-item__num">01</span><h3>Счётчик</h3><p>Стоит ли на всех страницах, нет ли дублей и конфликтов с другими кодами.</p></article>
-        <article class="audit-item reveal"><span class="audit-item__num">02</span><h3>Цели</h3><p>Срабатывают ли формы, квизы, кнопки мессенджеров и телефона. Нет ли двойного счёта.</p></article>
+        <article class="audit-item reveal"><span class="audit-item__num">02</span><h3>Цели</h3><p>Срабатывают ли формы, квизы, кнопки мессенджеров и телефона — с компьютера, с телефона и при переходах по сайту без перезагрузки страницы. Нет ли двойного счёта.</p></article>
         <article class="audit-item reveal"><span class="audit-item__num">03</span><h3>Звонки</h3><p>Попадают ли звонки из коллтрекинга в Метрику и с каким источником.</p></article>
         <article class="audit-item reveal"><span class="audit-item__num">04</span><h3>Реклама</h3><p>UTM-метки, передача целей в Директ и цели, на которых обучаются автостратегии.</p></article>
         <article class="audit-item reveal"><span class="audit-item__num">05</span><h3>Сверка с CRM</h3><p>Сколько заявок в CRM и Метрике и где расходятся цифры.</p></article>
@@ -240,6 +241,7 @@
           <article><b>Критично / важно / улучшение</b><p>Каждая ошибка отмечена по важности.</p></article>
           <article><b>Чем грозит</b><p>Простыми словами объясняю, что теряет бизнес.</p></article>
           <article><b>Как исправить</b><p>Пошаговое ТЗ для разработчика или инструкция для вас.</p></article>
+          <article><b>Карта целей</b><p>Таблица со всеми целями: где срабатывает, статус и как проверена.</p></article>
         </div>
       </div>
     </div>
@@ -256,8 +258,7 @@
           <p class="price__value">9 900 ₽</p>
           <p>Проверю, можно ли доверять цифрам в Метрике. В течение недели пришлю отчёт: что сломано, чем это грозит и что исправить в первую очередь.</p>
           <p class="price__label">Проверю</p>
-          <ul class="checks"><li>Счётчик и цели</li><li>Звонки и чистоту данных</li><li>Ошибки и потери данных</li><li>Отчёт с приоритетами</li></ul>
-          <p class="price__note price__note--light">Доступ к Метрике — только на просмотр. Пароль сообщать не нужно.</p>
+          <ul class="checks"><li>Счётчик и цели</li><li>Звонки и чистоту данных</li><li>Ошибки и потери данных</li><li>Отчёт с приоритетами</li><li>Карта целей в Google Таблице</li></ul>
           <button type="button" class="btn btn--outline" data-goal="click_order" data-service="audit" data-open-contact>Заказать экспресс-аудит</button>
         </article>
         <article class="price price--hit reveal">
@@ -270,34 +271,31 @@
           <p class="price__note"><svg class="ico"><use href="#i-clock"/></svg><span>Срок — неделя после получения доступов. Метрика — просмотр, Директ — чтение.</span></p>
           <button type="button" class="btn btn--primary" data-goal="click_order" data-service="audit_tz" data-open-contact>Заказать аудит с ТЗ</button>
         </article>
-        <article class="price reveal">
+        <article class="price price--wide reveal">
           <p class="price__name">Настройка под ключ</p>
           <p class="price__value">от 20 000 ₽</p>
-          <p>Настрою Метрику с нуля, цели, подключение коллтрекинга и CRM, подготовлю первый отчёт и покажу, как его читать. Точную цену назову после 15-минутного созвона.</p>
-          <p class="price__label">Доступы</p><p>Метрика и тег-менеджер — с правом редактирования на время настройки.</p>
-          <p class="price__label">Срок</p><p>Определим после созвона.</p>
-          <button type="button" class="btn btn--outline" data-goal="click_order" data-service="setup" data-open-contact>Обсудить настройку</button>
-        </article>
-        <article class="price reveal">
-          <p class="price__name">Мониторинг</p>
-          <p class="price__value">2 500 ₽ <span>в месяц</span></p>
-          <p>Если цель перестанет срабатывать или пропадёт счётчик, сообщу в тот же день в удобный мессенджер или на почту. Короткая сводка — раз в месяц.</p>
-          <p class="price__label">Доступ</p><p>Метрика — только просмотр.</p>
-          <button type="button" class="btn btn--outline" data-goal="click_order" data-service="monitoring" data-open-contact>Подключить мониторинг</button>
+          <div class="price--wide__description">
+            <p>Настрою Метрику с нуля, цели, подключение коллтрекинга и CRM, подготовлю первый отчёт и покажу, как его читать. Точную цену назову после 15-минутного созвона.</p>
+          </div>
+          <div class="price--wide__details">
+            <div><p class="price__label">Доступы</p><p>Метрика и тег-менеджер — с правом редактирования на время настройки.</p></div>
+            <div><p class="price__label">Срок</p><p>Определим после созвона.</p></div>
+            <button type="button" class="btn btn--outline" data-goal="click_order" data-service="setup" data-open-contact>Обсудить настройку</button>
+          </div>
         </article>
       </div>
       <div class="additional reveal">
         <h3>Дополнительные услуги</h3>
         <div class="additional__table-wrap">
           <table class="additional__table">
-            <thead><tr><th>Услуга</th><th>Цена</th><th>Срок</th><th></th></tr></thead>
+            <thead class="visually-hidden"><tr><th>Услуга</th><th>Цена</th><th>Срок</th><th></th></tr></thead>
             <tbody>
-              <tr><td>Консультация 1:1</td><td>3 500 ₽/час</td><td>По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="consultation" data-open-contact>Обсудить</button></td></tr>
-              <tr><td>UX-разбор по Вебвизору и картам кликов</td><td>От 9 900 ₽; с аудитом — 17 900 ₽</td><td>2–3 рабочих дня</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ux_review" data-open-contact>Обсудить</button></td></tr>
-              <tr><td>CJM: путь клиента от рекламы до оплаты</td><td>По объёму задачи</td><td>По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="cjm" data-open-contact>Обсудить</button></td></tr>
-              <tr><td>Разбор звонков и переписок</td><td>14 900 ₽</td><td>3–5 рабочих дней</td><td><button type="button" class="text-button" data-goal="click_order" data-service="calls_review" data-open-contact>Обсудить</button></td></tr>
-              <tr><td>Электронная коммерция для интернет-магазина</td><td>От 35 000 ₽</td><td>После созвона</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ecommerce" data-open-contact>Обсудить</button></td></tr>
-              <tr><td>Сопровождение: консультации, отчёты, срочные вопросы</td><td>От 25 000 ₽/мес</td><td>Ежемесячно</td><td><button type="button" class="text-button" data-goal="click_order" data-service="support" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">Консультация 1:1</td><td data-label="Цена">3 500 ₽/час</td><td data-label="Срок">По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="consultation" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">UX-разбор по Вебвизору и картам кликов</td><td data-label="Цена">От 9 900 ₽; с аудитом — 17 900 ₽</td><td data-label="Срок">2–3 рабочих дня</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ux_review" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">CJM: путь клиента от рекламы до оплаты</td><td data-label="Цена">По объёму задачи</td><td data-label="Срок">По договорённости</td><td><button type="button" class="text-button" data-goal="click_order" data-service="cjm" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">Разбор звонков и переписок</td><td data-label="Цена">14 900 ₽</td><td data-label="Срок">3–5 рабочих дней</td><td><button type="button" class="text-button" data-goal="click_order" data-service="calls_review" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">Электронная коммерция для интернет-магазина</td><td data-label="Цена">От 35 000 ₽</td><td data-label="Срок">После созвона</td><td><button type="button" class="text-button" data-goal="click_order" data-service="ecommerce" data-open-contact>Обсудить</button></td></tr>
+              <tr><td data-label="Услуга">Сопровождение: консультации, отчёты, срочные вопросы</td><td data-label="Цена">От 25 000 ₽/мес</td><td data-label="Срок">Ежемесячно</td><td><button type="button" class="text-button" data-goal="click_order" data-service="support" data-open-contact>Обсудить</button></td></tr>
             </tbody>
           </table>
         </div>
@@ -315,7 +313,7 @@
         <li class="reveal"><span class="steps__num">1</span><h3>Вы оставляете заявку</h3><p>Напишите в Telegram, MAX, по телефону или почте. Коротко опишите, что вас беспокоит: не сходятся цифры, нет заявок, непонятно, работает ли реклама.</p></li>
         <li class="reveal"><span class="steps__num">2</span><h3>Бесплатный созвон 15 минут</h3><p>Задам уточняющие вопросы и предложу подходящий формат: консультацию, аудит или настройку.</p></li>
         <li class="reveal"><span class="steps__num">3</span><h3>Фиксируем объём, срок и оплату</h3><p>До начала работ вы знаете, что входит в услугу, какие доступы нужны, сколько она стоит и когда будет результат.</p></li>
-        <li class="reveal"><span class="steps__num">4</span><h3>Получаете результат</h3><p>Для аудита предоставляете доступ к Метрике только на просмотр. Отчёт готов в течение недели после получения доступов; затем разбираем его на созвоне, если он входит в пакет.</p></li>
+        <li class="reveal"><span class="steps__num">4</span><h3>Получаете результат</h3><p>Отчёт готов в течение недели после получения доступов. Затем разбираем его на созвоне, если он входит в пакет.</p></li>
       </ol>
     </div>
   </section>
@@ -327,15 +325,37 @@
       <h2 class="section__title reveal">Что я нахожу чаще всего</h2>
       <p class="section__lead reveal">Эти ошибки не видны снаружи, но искажают цифры, по которым вы распределяете бюджет.</p>
       <div class="issues-grid">
-        <article class="issue reveal"><span>01</span><div><h3>Цель считает клики, а не заявки</h3><p>Цель срабатывает на нажатие «Отправить», даже если форма не ушла. В Метрике заявок больше, чем в CRM.</p></div></article>
-        <article class="issue reveal"><span>02</span><div><h3>Звонки не попадают в Метрику</h3><p>Коллтрекинг подключён, но звонки не передаются как цель. Директ не видит самые ценные обращения.</p></div></article>
-        <article class="issue reveal"><span>03</span><div><h3>Счётчик установлен дважды</h3><p>Код есть и на сайте, и в тег-менеджере. Визиты и цели могут считаться повторно.</p></div></article>
-        <article class="issue reveal"><span>04</span><div><h3>Квиз и мессенджеры без целей</h3><p>Заявки из квиза и нажатия на кнопки мессенджеров не учитываются. Реклама выглядит хуже, чем работает.</p></div></article>
-        <article class="issue reveal"><span>05</span><div><h3>Автостратегия учится не на той цели</h3><p>Директ ищет людей, которые открывают страницу контактов, а не тех, кто действительно оставляет заявку.</p></div></article>
-        <article class="issue reveal"><span>06</span><div><h3>Реклама без UTM-меток</h3><p>Часть платного трафика попадает в «прямые заходы», и оценить её окупаемость нельзя.</p></div></article>
+        <article class="issue reveal"><span>01</span><div><h3>Цель считает клик, а не заявку</h3><p>Цель срабатывает на нажатие кнопки, даже если форма не ушла из-за пустых полей или капчи. В Метрике заявок больше, чем в CRM.</p></div></article>
+        <article class="issue reveal"><span>02</span><div><h3>Две цели на одно действие</h3><p>Одну цель заводил один подрядчик, вторую — другой. Если обе выбраны в отчёте или в Директе, каждая заявка считается дважды.</p></div></article>
+        <article class="issue reveal"><span>03</span><div><h3>Форма «ничего не делает»</h3><p>В форме есть скрытое обязательное поле, например город из всплывающего окна. Часть посетителей не может отправить заявку, и в Метрике этого не видно.</p></div></article>
+        <article class="issue reveal"><span>04</span><div><h3>Заявки из квизов и форм без перезагрузки теряются</h3><p>Форма отправляется, заявка приходит менеджеру, а в Метрику событие не уходит.</p></div></article>
+        <article class="issue reveal"><span>05</span><div><h3>Чат или обратный звонок путают счёт</h3><p>Виджет отправляет свои события вдобавок к целям сайта, и одно обращение считается дважды. Или наоборот: сайт начинает слушать виджет раньше, чем тот загрузился, и заявки теряются.</p></div></article>
+        <article class="issue reveal"><span>06</span><div><h3>Рекламный источник теряется по дороге</h3><p>Посетитель пришёл из Директа, перешёл на другую страницу и оставил заявку, а в отчётах она числится за «прямыми заходами». Частая причина — реклама без UTM-меток или переход через другой домен.</p></div></article>
+        <article class="issue reveal"><span>07</span><div><h3>Кнопки мессенджеров не открываются</h3><p>WhatsApp заблокирован, Telegram работает с перебоями. Если на сайте только они, часть обращений пропадает.</p></div></article>
+        <article class="issue reveal"><span>08</span><div><h3>Цели не совпадают с тем, что есть на сайте</h3><p>Форму давно убрали, а цель осталась. Сайт обновили или перенесли на другой движок, а цели так и ждут старые кнопки. Или событие на сайте есть, а цель под него так и не создали.</p></div></article>
+        <article class="issue reveal"><span>09</span><div><h3>Оплаты есть, а цель показывает ноль</h3><p>Автоцель «Возврат из платёжной системы» знает не все платёжные сервисы. Для интернет-магазинов.</p></div></article>
+        <article class="issue reveal"><span>10</span><div><h3>Сайт без перезагрузки страниц считает неверно</h3><p>Так устроены сайты на React, Vue и часть конструкторов. Метрика не видит переходы между разделами, а цель после нескольких переходов срабатывает на одну заявку два-три раза или не срабатывает совсем.</p></div></article>
+        <article class="issue reveal"><span>11</span><div><h3>Заказ засчитывается дважды</h3><p>Покупатель обновил страницу «Спасибо за заказ» или вернулся на неё, и Метрика получила ту же покупку ещё раз. Выручка в отчётах больше, чем в кассе. Для интернет-магазинов.</p></div></article>
+        <article class="issue reveal"><span>12</span><div><h3>В мобильной версии цели не работают</h3><p>Мобильная версия свёрстана отдельно, а цели настроили только для компьютера. Теряются заявки с телефонов, а их часто большинство.</p></div></article>
+      </div>
+      <div class="method" id="method">
+        <h2 class="section__title reveal">Как я проверяю аналитику</h2>
+        <div class="audit-grid">
+          <article class="audit-item reveal"><span class="audit-item__num">01</span><h3>Отправляю настоящие тестовые заявки</h3><p>Из каждой формы, квиза и чата, с пометкой «ТЕСТ». Смотрю, ушло ли событие ровно один раз и только после успешной отправки.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">02</span><h3>Проверяю ошибки тоже</h3><p>Пустые поля, неверный телефон, без согласия — в этих случаях заявка засчитываться не должна.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">03</span><h3>Захожу как новый посетитель из рекламы</h3><p>В чистом браузере, по рекламной ссылке, через 2–3 страницы до заявки. Так видно, доходит ли источник до заявки.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">04</span><h3>Проверяю с компьютера и с телефона</h3><p>И по-разному попадаю на страницу: напрямую, с другой страницы, кнопкой «Назад». На современных сайтах цель может работать в одном случае и молчать в другом.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">05</span><h3>Тестовый заказ — только с вашего разрешения</h3><p>Перед заказом спрошу, можно ли его оформить. Картой не плачу, номер заказа пришлю, чтобы менеджер его отменил. Для интернет-магазинов.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">06</span><h3>Проверяю каждую цель, а не выборочно</h3><p>Сверяю, что заведено в Метрике, с тем, что есть на сайте: дубли, удалённые формы, события без целей.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">07</span><h3>Смотрю всё, что стоит на сайте</h3><p>Чаты, коллтрекинг, рекламные пиксели: что они отправляют в Метрику и не ломают ли формы. Отдельно — что не работает из России.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">08</span><h3>Проверяю требования закона</h3><p>Плашка о cookies, согласие на обработку данных в формах, запрещённые сервисы и соцсети.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">09</span><h3>Каждый вывод подкрепляю доказательством</h3><p>Конкретный тест, скриншот или строка из Метрики. Если что-то проверить нельзя, пишу об этом прямо.</p></article>
+          <article class="audit-item reveal"><span class="audit-item__num">10</span><h3>Сдаю три документа</h3><p>Отчёт для вас простым языком: что не так, чем мешает, кто исправляет. ТЗ для разработчика с чек-листом приёмки. И карта целей в Google Таблице: где срабатывает каждая цель, её статус и как я её проверяла. По карте видно, что исправили, и легко перепроверить сайт после правок.</p></article>
+        </div>
+        <p class="audit-note reveal">Тестовые заявки помечаю и предупреждаю о них заранее, чтобы менеджеры не тратили на них время.</p>
       </div>
       <p class="issues-cta reveal"><button type="button" class="btn btn--primary" data-goal="click_order" data-service="common_errors" data-open-contact>Проверить мою Метрику</button></p>
-      <div class="projects-heading">
+      <div class="projects-heading" id="projects">
         <p class="kicker reveal">Проекты из опыта</p>
         <h2 class="section__title reveal">Проекты</h2>
         <p class="section__lead reveal">Три проекта из разных сфер — без названий компаний и клиентских данных.</p>
@@ -426,10 +446,6 @@
           <p>Отчёт будет готов в течение недели после получения необходимых доступов.</p>
         </details>
         <details>
-          <summary>Нужно ли сообщать пароль от Метрики?</summary>
-          <p>Нет. Вы добавляете мой логин в настройках счётчика с правом «Только просмотр» — это занимает пару минут, я пришлю инструкцию. Доступ можно отозвать в любой момент.</p>
-        </details>
-        <details>
           <summary>Почему в Метрике и в CRM разное количество заявок?</summary>
           <p>Частые причины: цель срабатывает на клик по кнопке, а не на успешную отправку формы; одна заявка засчитывается дважды; звонки и сообщения в мессенджерах не попадают в Метрику без коллтрекинга; часть посетителей блокирует счётчик. На аудите я нахожу, какие из причин есть у вас, и показываю, каким цифрам можно верить.</p>
         </details>
@@ -465,6 +481,10 @@
           <summary>А если ошибок не найдётся?</summary>
           <p>Вы получите подтверждение, что данным можно доверять, и список того, что можно улучшить.</p>
         </details>
+        <details>
+          <summary>Сайт сделан на конструкторе или на React — это проблема?</summary>
+          <p>Нет. На таких сайтах цели чаще ломаются незаметно, поэтому каждую проверяю и при прямом заходе, и после перехода по сайту.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -475,7 +495,6 @@
     "mainEntity": [
       { "@type": "Question", "name": "Сколько стоит аудит Яндекс Метрики?", "acceptedAnswer": { "@type": "Answer", "text": "Экспресс-аудит — 9 900 ₽: проверю счётчик, цели, звонки и чистоту данных, пришлю отчёт с приоритетами в течение недели. Аудит с ТЗ — 24 900 ₽: дополнительно проверю Директ, сверю данные с CRM по обезличенной выгрузке, подготовлю ТЗ и разберу отчёт на созвоне 30 минут." } },
       { "@type": "Question", "name": "Сколько времени занимает аудит?", "acceptedAnswer": { "@type": "Answer", "text": "Отчёт будет готов в течение недели после получения необходимых доступов." } },
-      { "@type": "Question", "name": "Нужно ли сообщать пароль от Метрики?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Вы добавляете мой логин в настройках счётчика с правом «Только просмотр» — это занимает пару минут, я пришлю инструкцию. Доступ можно отозвать в любой момент." } },
       { "@type": "Question", "name": "Почему в Метрике и в CRM разное количество заявок?", "acceptedAnswer": { "@type": "Answer", "text": "Частые причины: цель срабатывает на клик по кнопке, а не на успешную отправку формы; одна заявка засчитывается дважды; звонки и сообщения в мессенджерах не попадают в Метрику без коллтрекинга; часть посетителей блокирует счётчик. На аудите я нахожу, какие из причин есть у вас, и показываю, каким цифрам можно верить." } },
       { "@type": "Question", "name": "Что входит в настройку Яндекс Метрики и GA4 с нуля?", "acceptedAnswer": { "@type": "Answer", "text": "Настройка Метрики с нуля, цели, подключение коллтрекинга и CRM, первый отчёт и обучение. Стоимость — от 20 000 ₽, для интернет-магазина с электронной коммерцией — от 35 000 ₽. Точный срок определим после созвона." } },
       { "@type": "Question", "name": "Можно ли использовать Google Analytics 4 в России?", "acceptedAnswer": { "@type": "Answer", "text": "Отдельного закона, который запрещает именно Google Analytics, нет. Но по закону о персональных данных (ч. 5 ст. 18 152-ФЗ) данные россиян при сборе должны сначала записываться в базы на территории России, а GA4 отправляет данные посетителей сразу на серверы Google за рубежом. Уведомление Роскомнадзора о трансграничной передаче и согласие посетителя в cookie-баннере эту проблему не снимают. Штраф для компаний за нарушение локализации — до 6 млн ₽, при повторном нарушении — до 18 млн ₽. Поэтому для российских сайтов безопаснее Яндекс Метрика, а GA4 стоит подключать только после консультации с юристом по персональным данным." } },
@@ -484,7 +503,8 @@
       { "@type": "Question", "name": "Как оплатить? Работаете с юрлицами?", "acceptedAnswer": { "@type": "Answer", "text": "Работаю как самозанятая, чек выдаю через «Мой налог». Для ИП и ООО готовлю договор и акт. НДС нет. Условия оплаты согласуем до начала работы." } },
       { "@type": "Question", "name": "У нас уже есть агентство или подрядчик. Зачем нужен независимый аудит?", "acceptedAnswer": { "@type": "Answer", "text": "Независимая проверка помогает убедиться, что данные аналитики точны и по ним можно объективно оценивать работу подрядчика." } },
       { "@type": "Question", "name": "Нужно ли передавать данные клиентов из CRM?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. Для сверки достаточно выгрузки без имён и телефонов: дата, источник и статус заявки." } },
-      { "@type": "Question", "name": "А если ошибок не найдётся?", "acceptedAnswer": { "@type": "Answer", "text": "Вы получите подтверждение, что данным можно доверять, и список того, что можно улучшить." } }
+      { "@type": "Question", "name": "А если ошибок не найдётся?", "acceptedAnswer": { "@type": "Answer", "text": "Вы получите подтверждение, что данным можно доверять, и список того, что можно улучшить." } },
+      { "@type": "Question", "name": "Сайт сделан на конструкторе или на React — это проблема?", "acceptedAnswer": { "@type": "Answer", "text": "Нет. На таких сайтах цели чаще ломаются незаметно, поэтому каждую проверяю и при прямом заходе, и после перехода по сайту." } }
     ]
   }
   </script>
@@ -549,7 +569,7 @@
 </dialog>
 
 <div class="cookie" id="cookie" hidden>
-  <p>Сайт использует cookies и Яндекс Метрику, чтобы понимать, как посетители пользуются сайтом. Продолжая пользоваться сайтом, вы соглашаетесь с этим. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
+  <p>Сайт использует cookies и Яндекс Метрику, чтобы понимать, как посетители пользуются сайтом. Нажимая «Понятно», вы соглашаетесь с этим. Подробнее — в <a href="privacy.html">политике конфиденциальности</a>.</p>
   <div class="cookie__actions">
     <button class="btn btn--primary btn--sm" data-cookie="accept">Понятно</button>
     <button class="btn btn--ghost-dark btn--sm" data-cookie="decline">Отказаться</button>
