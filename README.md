@@ -40,6 +40,7 @@
 | `click_max` | Переход в MAX |
 | `click_phone` | Клик по телефону |
 | `click_email` | Клик по почте |
+| `faq_open` | Первое открытие вопроса FAQ за загрузку страницы |
 
 В `service` передаются `header_contact`, `header_mobile`, `hero_audit`, `hero_free_call`, `seasonal`, `pains_cta`, `audit`, `audit_tz`, `setup`, `consultation`, `ux_review`, `cjm`, `calls_review`, `ecommerce`, `support`, `agency_audit` и `checklist`.
 
